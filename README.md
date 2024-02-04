@@ -16,10 +16,15 @@
 git clone https://github.com/XenonCodes/test-task-API.git my-project
 ```
 
-2. Создайте файл .env.
+2. Создайте файл .env
 ```
 cd my-project/
 cp .env.example .env
+```
+
+3. Соберите образы и запустите все контейнеры
+```
+docker-compose up -d
 ```
 
 3. Установить зависимости проекта
@@ -32,9 +37,9 @@ composer install
 php artisan key:generate
 ```
 
-5. В открытой консоли директории проекта введите команду для генерации таблиц базы данных
+5. В открытой консоли директории проекта введите команду для генерации таблиц с фековыми данными
 ```
-php artisan migrate
+php artisan migrate -seed
 ```
 
 ## Студенты (Students)

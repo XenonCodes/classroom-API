@@ -8,6 +8,35 @@
 - Composer
 - Docker
 
+## Установка
+
+1. Клонировать этот репозиторий
+
+```
+git clone https://github.com/XenonCodes/test-task-API.git my-project
+```
+
+2. Создайте файл .env.
+```
+cd my-project/
+cp .env.example .env
+```
+
+3. Установить зависимости проекта
+```
+composer install
+```
+
+4. Создайте ключ проекта Laravel
+```
+php artisan key:generate
+```
+
+5. В открытой консоли директории проекта введите команду для генерации таблиц базы данных
+```
+php artisan migrate
+```
+
 ## Студенты (Students)
 
 1. Показать всех студентов
